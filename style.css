@@ -1,0 +1,123 @@
+:root {
+    --primary-presto: #06A3DA;
+    --text-header: white;
+    --text-header-contrast: black;
+
+}
+*{
+    font-family: 'IBM Plex Mono', monospace;
+}
+h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Gloock', serif; ;
+}
+.text-presto{
+    color: var(--primary-presto);
+}
+.bg-presto{
+    background-color: var(--primary-presto);
+}
+
+.btn-presto {
+    padding: 5px 25px;
+    color: var(--text-header);
+    background-color: var(--primary-presto);
+    border-radius: 2px;
+}
+.btn-presto:hover {
+    
+    background-color: var(--primary-presto);
+    
+}
+.navbar .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--text-header);
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.navbar.bg-white .nav-link {
+    color: var(--text-header-contrast);
+}
+.navbar .nav-item .nav-link-icon-presto{
+    color: var(--primary-presto);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--primary-presto);
+}
+.nav-item{
+    position: relative;
+    padding: 25px 0;
+    transition: all linear 300ms;
+    
+}
+.navbar .navbar-brand {
+    color: var(--text-header);
+}
+.navbar.bg-white .navbar-brand {
+    color: var(--primary-presto);
+}
+#mainNavbar{
+    border-color: darkgray;
+    
+}
+
+
+.navbar-nav .nav-link.active::after{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 70%;
+    transform: translateX(-50%);
+    background-color: var(--primary-presto);
+}
+.navbar-nav .nav-link:hover{
+    color: var(--primary-presto);
+}
+/* .navbar-nav .nav-item:not(.dropdown) .nav-link:hover::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-presto);
+}        */
+/* .navbar-nav .nav-item .nav-link:hover::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-presto);
+}  IN UNO SI SPECIFICA UN CASO NELL'ALTRO IL CASO OPPOSTO CON IL NOT CHE VERIFICA SE C'è O MENO QUELLA CLASSE*/
+.navbar-nav .nav-link::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-presto);
+    transform: translateX(-50%);
+    transition: all linear 250ms;
+}
+.navbar-nav .nav-link:hover::before{
+    width: 70%;
+    
+}
+.navbar.thin .nav-item{
+    padding: 10px 0;
+}
+.navbar.bg-white .navbar-nav .nav-link{
+    color: var(--text-header-contrast);
+}
+
