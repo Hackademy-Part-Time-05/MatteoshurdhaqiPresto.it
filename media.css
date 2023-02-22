@@ -28,5 +28,9 @@
     .navbar-nav .nav-link::before {
         height: 0;
     }
-
+    .info-presto{
+        transform: translate(0,0);
+        left: 0;
+        position: relative;
+    }
 }

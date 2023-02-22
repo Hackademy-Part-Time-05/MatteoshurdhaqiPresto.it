@@ -140,5 +140,42 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     bottom: 0;
     right: 0;
     background-color: var(--alpha-primary-presto);
+    
+    
+}
+/* .carousel-content-presto{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 2;
+    color: white;
+} */
+.btn-big-presto {
+    padding: 10px 30px;
+    color: var(--text-header);
+    background-color: var(--primary-presto);
+    border-radius: 2px;
+}
+.btn-big-presto:hover {
+    color: var(--text-header-contrast);
+    background-color: var(--primary-presto);
+    
+}
+.btn-big-white-presto {
+    padding: 10px 30px;
+    color: var(--text-header);
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+.btn-big-white-presto:hover {
+    color: var(--text-header-contrast);
+    background-color: white;
+    
+}
+.info-presto{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: relative;
 }
 
