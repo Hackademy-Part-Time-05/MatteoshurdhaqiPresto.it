@@ -1,5 +1,6 @@
 :root {
     --primary-presto: #06A3DA;
+    --alpha-primary-presto: rgba(9, 30, 62, .7);
     --text-header: white;
     --text-header-contrast: black;
 
@@ -128,5 +129,16 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     padding: 5px 10px;
     border-color: var(--primary-presto);
     border-radius: 2px;
+}
+
+
+.overlay::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--alpha-primary-presto);
 }
 

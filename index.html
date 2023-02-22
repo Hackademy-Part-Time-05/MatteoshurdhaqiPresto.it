@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
   </head>
-  <body class="bg-primary">
+  <body>
+    <!----------    Navbar
+    --------------------->
     <nav id="mainNavbar" class="navbar navbar-expand-lg border-bottom p-0 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand fs-3 fw-bold" href="#"><i class="fa-solid fa-cart-shopping me-2"></i>Presto.it</a>
@@ -32,8 +34,8 @@
                   Annunci
                 </a>
                 <ul class="dropdown-menu rounded-0 m-0">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Compra e Vendi</a></li>
+                  <li><a class="dropdown-item" href="#">Aste Online</a></li>
                   
                 </ul>
               </li>
@@ -43,7 +45,7 @@
               <li class="nav-item">
                 <div class="d-flex">   
                   <a class="nav-link nav-link-icon-presto ms-lg-0 ms-2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                  <button class="btn btn-presto ms-lg-2 ms-4">Annunci salienti</button>
+                  <button class="btn btn-presto ms-lg-2 ms-4">Visualizza Annunci</button>
                 </div> 
               </li>
               
@@ -52,10 +54,45 @@
             
           </div>
         </div>
-      </nav>
-      <section id="masthead" style="height: 2000px; background-color: yellowgreen;">
+    </nav>
+    <!----------   Section masthead
+    --------------------->
+    <section id="masthead" style=" background-color: rgba(0, 0, 0, 0.2);">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0">
+              <div id="carouselPresto" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active overlay">
+                    <div class="z-1 position-absolute top-50 start-50 translate-middle">
+                        <h2>Sottotitolo</h2>
+                        <h1>Titolo</h1>
+                    </div>
+                    <img src="/images/headway-5QgIuuBxKwM-unsplash.jpg" class="d-block w-100" alt="Marketing">
+                  </div>
+                  <div class="carousel-item overlay">
+                    <div class="z-1 position-absolute top-50 start-50 translate-middle">
+                      <h2>Sottotitolo</h2>
+                      <h1>Titolo</h1>
+                    </div>
+                    <img src="/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" class="d-block w-100" alt="Lavoro di squadra">
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPresto" data-bs-slide="prev">
+                  <i class="fa-solid fa-angle-left fs-1"></i>
+                  
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPresto" data-bs-slide="next">
+                  <i class="fa-solid fa-angle-right fs-1 "></i>
+                  
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
 
-      </section>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="/script.js"></script>
