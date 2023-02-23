@@ -1,5 +1,6 @@
 :root {
     --primary-presto: #06A3DA;
+    --secondary-presto : #091E3E;
     --alpha-primary-presto: rgba(9, 30, 62, .7);
     --text-header: white;
     --text-header-contrast: black;
@@ -17,6 +18,12 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
 .bg-presto{
     background-color: var(--primary-presto);
 }
+.text-alternative-presto{
+    color: var(--secondary-presto);
+}
+.bg-alternative-presto{
+    background-color: var(--secondary-presto);
+}
 
 .btn-presto {
     padding: 5px 25px;
@@ -28,6 +35,32 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     
     background-color: var(--primary-presto);
     
+}
+.btn-alternative-presto {
+    padding: 5px 25px;
+    color: var(--text-header);
+    background-color: var(--secondary-presto);
+    border-radius: 2px;
+}
+.btn-alternative-presto:hover {
+    
+    background-color: var(--secondary-presto);
+    
+}
+.btn-big-alternative-presto {
+    padding: 10px 25px;
+    color: var(--text-header);
+    background-color: var(--secondary-presto);
+    border-radius: 2px;
+}
+.btn-big-alternative-presto:hover {
+    
+    background-color: var(--secondary-presto);
+    
+}
+.input-presto{
+    padding: 5px 25px;
+    border-radius: 2px;
 }
 .navbar .nav-link {
     display: block;
@@ -48,7 +81,7 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--primary-presto);
 }
-.nav-item{
+.navbar .nav-item{
     position: relative;
     padding: 25px 0;
     transition: all linear 300ms;
@@ -71,7 +104,7 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 
-.navbar-nav .nav-link.active::after{
+.navbar-nav .nav-link.active::before{
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -82,6 +115,7 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translateX(-50%);
     background-color: var(--primary-presto);
 }
+
 .navbar-nav .nav-link:hover{
     color: var(--primary-presto);
 }
@@ -177,5 +211,9 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     transform: translate(-50%,-50%);
     left: 50%;
     position: relative;
+}
+
+#mainFooter .nav .nav-link span{
+    color: var(--text-header);
 }
 
