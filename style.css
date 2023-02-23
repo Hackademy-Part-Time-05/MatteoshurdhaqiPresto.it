@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50%;
+    width: 40%;
     height: 4px;
     background-color: var(--primary-presto);
     
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     border-radius: 2px;
     z-index: 2;
     /* si puo scrivere tutto su una proprietà */
-    animation-name: dot;
+    animation-name: dot-40;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -266,14 +266,67 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     
 }
 
-@keyframes dot {
+.title-effect{
+    position: relative;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title-effect:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 5px;
+    background-color: var(--secondary-presto);
+    
+}
+.title-effect::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 7px;
+    height: 5px;
+    background-color:white;
+    border-radius: 2px;
+    z-index: 2;
+    /* si puo scrivere tutto su una proprietà */
+    animation-name: dot-30;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+@keyframes dot-30 {
     from{
         left: 0;
     }
     to{
-        left: 50%;
+        left: 30%;
     }
 }
 
+@keyframes dot-40 {
+    from{
+        left: 0;
+    }
+    to{
+        left: 40%;
+    }
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60px ;
+    width:60px ;
+    background-color: var(--secondary-presto);
+}
 
 
