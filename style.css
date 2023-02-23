@@ -212,8 +212,21 @@ h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6 {
     left: 50%;
     position: relative;
 }
-
+#mainFooter .nav .nav-link {
+    transition: transform ease-out 300ms;
+}
+#mainFooter .nav .nav-link:hover {
+    transform: translateX(10px);
+}
 #mainFooter .nav .nav-link span{
     color: var(--text-header);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-color: var(--primary-presto);
 }
 
